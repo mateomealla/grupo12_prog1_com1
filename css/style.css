@@ -1,0 +1,276 @@
+/* titulos */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap");
+/* font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+
+/* menu */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap");
+/* font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; */
+
+/* subtitulo */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap");
+/* font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; */
+  
+/* parrafos */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Shadows+Into+Light&display=swap");
+/* font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
+
+/* ENCLACES */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap");
+/* font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* HEADER */
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+header {
+  background-color: #343a40ba;
+  padding: 5px 10px;
+}
+
+/* nav header */
+.padre-div-header {
+  display: flex;
+  justify-content: space-between;
+}
+/* ul de div en header */
+.padre-lista {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+/* div del header */
+.hijos-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+}
+.hijos-nav-logo {
+  display: flex;
+  justify-content: right;
+  width: 50%;
+  margin-right: 10px;
+}
+/* li de los ul del header */
+.hijos-lista {
+  margin: 0px 10px;
+}
+/* a de los li */
+.link-menu {
+  color: white;
+  font-size: 20px;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+.link-menu:hover {
+  color: #7a7a7a;
+}
+
+/* logo header */
+.logo {
+  border-radius: 100%;
+  height: 80px;
+  filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+  margin-right: 20px;
+}
+/* background home */
+.bodyhome {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodyreceta {
+  background-image: url(../img/cocinando.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodycategory {
+  background-image: url(../img/categora.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodycategories{
+  background-image: url(../img/categories.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodyresult {
+  background-image: url(../img/result.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodylogin {
+  background-image: url(../img/login.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.bodyregister {
+  background-image: url(../img/register.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* BODY */
+.frame1 {
+  text-align: center;
+  background-color: #343a40ba;
+  padding: 190px 0px;
+}
+.frame1-register {
+  text-align: center;
+  background-color: #343a40ba;
+  padding: 190px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caja-formulario {
+  background-color: #343a40d2;
+  border: gray 0.3px solid;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+}
+.caja-formulario:hover {
+  border: white 0.3px solid;
+}
+.titulo1 {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150px;
+  color: white;
+  width: 100%;
+}
+.titulo3 {
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.titulo4{
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .frame2 {
+    background-color: transparent;
+  }
+  .titulo1 {
+    font-size: 60px;
+  }
+  .receta {
+    background-color: #343a40;
+  }
+  .padre-recetas-detalle {
+    flex-wrap: wrap;
+  }
+  .receta-detalle {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #343a40;
+  }
+  .padre-div-header {
+    flex-wrap: wrap;
+  }
+  .hijos-nav {
+    width: 100%;
+    order: 2;
+  }
+  .hijos-nav-logo {
+    width: 100%;
+    justify-content: center;
+    order: 1;
+  }
+
+  header {
+    background-color: #343a40ba;
+  }
+  .hijos-lista {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    margin: 10px 0px;
+    align-items: center;
+    height: 40px;
+  }
+  .padre-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .receta {
+    width: 100%;
+  }
+  .mas {
+    width: 50%;
+    font-size: 30px;
+  }
+  .caja-contacto {
+    width: 90%;
+  }
+  .caja-redes {
+    width: 90%;
+  }
+  .caja-mapa {
+    width: 90%;
+  }
+  .caja-formulario {
+    width: 95%;
+  }
+}
