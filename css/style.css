@@ -398,19 +398,19 @@ footer {
 }
 /* Ipads */
 @media (max-width: 768px) {
-  .parrafo{
+  .parrafo {
     font-size: 20px;
   }
   .caja-formulario {
     width: 80%;
   }
-  #titulo1destacado{
+  #titulo1destacado {
     font-size: 50px;
   }
-  #titulo3destacado{
+  #titulo3destacado {
     font-size: 30px;
   }
-  .parrafod{
+  .parrafod {
     font-size: 13px;
   }
   .mas {
@@ -453,9 +453,8 @@ footer {
     font-size: 25px;
   }
   .detalle {
-    font-size: 25px;
-    }
-
+    font-size: 25px;
+  }
 }
 /* Celulares */
 @media (max-width: 480px) {
