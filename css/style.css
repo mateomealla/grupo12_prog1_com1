@@ -396,6 +396,116 @@ footer {
   border-radius: 5px;
   filter: drop-shadow(2px 2px 4px rgb(0,  0,  0));
 }
+
+.caja-contacto {
+  margin: 15px 0px;
+  background-color: #ff214da1;
+  border-radius: 5px;
+  padding: 15px 0px;
+}
+.caja-contacto:hover {
+  background-color: #ff0033;
+}
+.caja-redes {
+  margin: 15px 0px;
+  background-color: #ff214da1;
+  border-radius: 5px;
+  padding: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.caja-redes:hover {
+  background-color: #ff0033;
+}
+.caja-mapa {
+  margin: 15px 0px;
+  background-color: #ff214da1;
+  border-radius: 5px;
+  padding: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.caja-mapa:hover {
+  background-color: #ff0033;
+}
+/* Register */
+/* lebels */
+.labels {
+  color: white;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: underline;
+  font-variation-settings: "wdth" 100;
+}
+/* divs form */
+.form-r-1 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.form-r-2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* inputs */
+.inputs {
+  padding: 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  border: gray 0.3px solid;
+  background-color: #343a40d2;
+  color: white;
+  width: 100%;
+}
+.titulo3r {
+  width: 100%;
+  font-size: 50px;
+  color: white;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.checkbox-r {
+  margin: 0px 10px;
+  width: 20px;
+  height: 20px;
+}
+/* form */
+.registro-form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.form-r-3 {
+  width: 60%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.boton-enviar {
+  width: 50%;
+  background-color: #343a40;
+  color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton-enviar:hover {
+  background-color: #7a7a7a;
+}
+
 /* Ipads */
 @media (max-width: 768px) {
   .parrafo {
