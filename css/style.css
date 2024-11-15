@@ -72,6 +72,7 @@ header {
   justify-content: space-between;
   width: 40%;
 }
+/* div del header del logo */
 .hijos-nav-logo {
   display: flex;
   justify-content: right;
@@ -91,6 +92,7 @@ header {
   font-weight: 200;
   font-style: normal;
 }
+
 .link-menu:hover {
   color: #7a7a7a;
 }
@@ -102,7 +104,8 @@ header {
   filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
   margin-right: 20px;
 }
-/* background home */
+/* backgrounds*/
+/* Index */
 .bodyhome {
   background-image: url(../img/fondo.jpg);
   background-size: cover;
@@ -110,6 +113,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* receta */
 .bodyreceta {
   background-image: url(../img/cocinando.jpg);
   background-size: cover;
@@ -117,6 +121,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* category */
 .bodycategory {
   background-image: url(../img/categora.jpg);
   background-size: cover;
@@ -124,6 +129,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* categories */
 .bodycategories {
   background-image: url(../img/categories.jpg);
   background-size: cover;
@@ -131,6 +137,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* serch-result */
 .bodyresult {
   background-image: url(../img/result.jpg);
   background-size: cover;
@@ -138,6 +145,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* login */
 .bodylogin {
   background-image: url(../img/login.jpg);
   background-size: cover;
@@ -145,6 +153,7 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+/* register */
 .bodyregister {
   background-image: url(../img/register.jpg);
   background-size: cover;
@@ -152,12 +161,14 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/* BODY */
+/* BODY*/
+/* div caja transparente */
 .frame1 {
   text-align: center;
   background-color: #343a40ba;
   padding: 190px 0px;
 }
+/* div caja transparente */
 .frame1-register {
   text-align: center;
   background-color: #343a40ba;
@@ -166,6 +177,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+/* div formulario */
 .caja-formulario {
   background-color: #343a40d2;
   border: gray 0.3px solid;
@@ -178,6 +190,7 @@ header {
 .caja-formulario:hover {
   border: white 0.3px solid;
 }
+/* H1 general */
 .titulo1 {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
@@ -187,24 +200,8 @@ header {
   color: white;
   width: 100%;
 }
-.titulo3 {
-  width: 100%;
-  font-size: 50px;
-  color: white;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-.titulo4 {
-  width: 100%;
-  font-size: 20px;
-  color: white;
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+/* subtitulos general */
+.titulo3,
 .titulo3f {
   width: 100%;
   font-size: 50px;
@@ -214,11 +211,22 @@ header {
   font-weight: 400;
   font-style: normal;
 }
+/* h3 en receta js */
+.titulo4 {
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* div gris en general */
 .frame2 {
   background-color: #343a40;
   width: 95%;
 }
-
+/* Div en index para lograr efecto transparente en query celular */
 .frame3 {
   text-align: center;
   width: 100%;
@@ -235,12 +243,14 @@ header {
   flex-wrap: wrap;
   padding: 30px 0px;
 }
+/* section de receta html */
 .padre-recetas-detalle {
   display: flex;
   justify-content: space-around;
   padding: 30px 0px;
 }
 /* Articles */
+/* Articles index */
 .receta {
   width: 18%;
   display: flex;
@@ -253,8 +263,9 @@ header {
   text-align: center;
 }
 .receta:hover {
-  border: white 0.3px solid;
+  border: white 2px solid;
 }
+/* Articles de receta.html */
 .receta-detalle {
   width: 47%;
   border: gray 0.3px solid;
@@ -264,7 +275,7 @@ header {
   flex-direction: column;
 }
 .receta-detalle:hover {
-  border: white 0.3px solid;
+  border: white 2px solid;
 }
 /* imagen en artcle */
 .imagen-receta {
@@ -295,7 +306,7 @@ header {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
-/* detalle en article */
+/* detalle en article <a>*/
 .detalle {
   background-color: #ff214f;
   color: white;
@@ -307,15 +318,17 @@ header {
   font-weight: 200;
   font-style: normal;
 }
+/* Pasar mouse, boton detalle ehn index.html se ponga mas oscuro */
 /* .detalle:hover {
   background-color: #ff0033;
 } */
+/* div del boton cargar mas */
 .interactivo {
   display: flex;
   justify-content: center;
   margin: 20px 0px;
 }
-/* boton cargar mas */
+/* h3 cargar mas */
 .mas {
   color: white;
   font-size: 60px;
@@ -327,6 +340,7 @@ header {
 .mas:hover {
   background-color: #ff0033;
 }
+/* Footer */
 footer {
   background-color: #343a40;
   padding: 10px 0px;
@@ -334,6 +348,7 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+/* divs del footer */
 .footer-hijos {
   text-align: center;
   border: gray 0.3px solid;
@@ -345,7 +360,10 @@ footer {
 .footer-hijos:hover {
   border: white 0.3px solid;
 }
-.parrafo {
+/* parrafos en general */
+.parrafo,
+.parrafod,
+.parrafor {
   color: #adb5bd;
   margin-top: 7px;
   width: 100%;
@@ -358,37 +376,20 @@ footer {
 .parrafo:hover {
   color: #ffffff;
 }
-.parrafod {
-  color: #adb5bd;
-  margin-top: 7px;
-  width: 100%;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
 .parrafod:hover {
   color: #ffffff;
-}
-.parrafor {
-  color: #adb5bd;
-  margin-top: 7px;
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 .parrafor:hover {
   color: #ffffff;
 }
+/* div de la marca copyright */
 .copy {
   width: 100%;
   background-color: #343a40;
   text-align: center;
   margin-top: 10px;
 }
+/* iframe del mapa en footer */
 .mapa {
   width: 100%;
   margin-top: 20px;
@@ -396,7 +397,7 @@ footer {
   border-radius: 5px;
   filter: drop-shadow(2px 2px 4px rgb(0,  0,  0));
 }
-
+/* cajas rosas de contacto dentro de divs en footer */
 .caja-contacto {
   margin: 15px 0px;
   background-color: #ff214da1;
@@ -406,6 +407,7 @@ footer {
 .caja-contacto:hover {
   background-color: #ff0033;
 }
+/* cajas rosas de redes dentro de divs en footer */
 .caja-redes {
   margin: 15px 0px;
   background-color: #ff214da1;
@@ -417,6 +419,7 @@ footer {
 .caja-redes:hover {
   background-color: #ff0033;
 }
+/* caja rosa de mapa dentro de divs en footer */
 .caja-mapa {
   margin: 15px 0px;
   background-color: #ff214da1;
@@ -447,6 +450,7 @@ footer {
   align-items: center;
   margin-top: 40px;
 }
+/* divs form */
 .form-r-2 {
   width: 60%;
   display: flex;
@@ -464,6 +468,7 @@ footer {
   color: white;
   width: 100%;
 }
+/* titulo h3 en formulario*/
 .titulo3r {
   width: 100%;
   font-size: 50px;
@@ -473,6 +478,7 @@ footer {
   font-weight: 300;
   font-style: normal;
 }
+/* input checkbox en formulario */
 .checkbox-r {
   margin: 0px 10px;
   width: 20px;
@@ -485,14 +491,15 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+/* div de boton enviar */
 .form-r-3 {
   width: 60%;
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+/* boton de enviar */
 .boton-enviar {
   width: 50%;
   background-color: #343a40;
@@ -515,10 +522,10 @@ footer {
     width: 80%;
   }
   #titulo1destacado {
-    font-size: 50px;
+    font-size: 90px;
   }
   #titulo3destacado {
-    font-size: 30px;
+    font-size: 40px;
   }
   .parrafod {
     font-size: 13px;
@@ -543,13 +550,13 @@ footer {
     text-decoration: underline;
   }
   .caja-contacto {
-    width: 55%;
+    width: 70%;
   }
   .caja-redes {
-    width: 55%;
+    width: 70%;
   }
   .caja-mapa {
-    width: 55%;
+    width: 70%;
   }
   .footer-hijos {
     display: flex;
@@ -564,6 +571,28 @@ footer {
   }
   .detalle {
     font-size: 25px;
+  }
+  .mapa {
+    height: 60vh;
+    width: 80%;
+  }
+  .registro-form {
+    width: 100%;
+  }
+  .form-r-1 {
+    width: 80%;
+  }
+  .form-r-2 {
+    width: 80%;
+  }
+  .form-r-3 {
+    width: 80%;
+  }
+  .boton-enviar {
+    width: 70%;
+  }
+  .caja-formulario {
+    width: 80%;
   }
 }
 /* Celulares */
@@ -630,7 +659,16 @@ footer {
   .caja-mapa {
     width: 90%;
   }
-  .caja-formulario {
+  .mapa {
     width: 95%;
+  }
+  #titulo1destacado {
+    font-size: 70px;
+  }
+  #titulo3destacado {
+    font-size: 35px;
+  }
+  .caja-formulario {
+    width: 90%;
   }
 }
