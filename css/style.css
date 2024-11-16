@@ -76,7 +76,14 @@ header {
 .hijos-nav-logo {
   display: flex;
   justify-content: right;
-  width: 50%;
+  width: 10%;
+  margin-right: 10px;
+}
+.hijos-nav-buscador {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 40%;
   margin-right: 10px;
 }
 /* li de los ul del header */
@@ -328,6 +335,19 @@ header {
   justify-content: center;
   margin: 20px 0px;
 }
+/* boton volver a home en search results */
+.interactivo-ser{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+  display: none;
+  width: 100%;
+}
+.link-ser{
+  display: flex;
+  justify-content: center;
+}
+
 /* h3 cargar mas */
 .mas {
   color: white;
@@ -468,6 +488,45 @@ footer {
   color: white;
   width: 100%;
 }
+/* input del buscador */
+#buscador{
+  border-radius: 5px;
+  border: gray 0.3px solid;
+  background-color: #343a40d2;
+  color: white;
+  width: 60%;
+  height: 25px;
+}
+/* Formulario del buscador */
+#formulario-buscador{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+/* id del boton de buscar */
+#boton-buscador{
+  width: 35%;
+  background-color: #343a40;
+  color: white;
+  height: 25px;
+}
+/* mensaje de error rojo */
+.error{
+  color: rgb(255, 42, 42);
+  margin-top: 7px;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* div feedback */
+.feedback{
+  display: none; 
+  width: 100%;
+}
 /* titulo h3 en formulario*/
 .titulo3r {
   width: 100%;
@@ -529,6 +588,9 @@ footer {
   }
   .parrafod {
     font-size: 13px;
+  }
+  #formulario-buscador{
+    width: 100%;
   }
   .mas {
     font-size: 40px;
@@ -620,6 +682,23 @@ footer {
   .hijos-nav {
     width: 100%;
     order: 2;
+  }
+  .hijos-nav-buscador{
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+  #formulario-buscador{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+       
+  }
+  #buscador{
+    width: 70%;
+  }
+  #boton-buscador{
+    width: 29%;
   }
   .hijos-nav-logo {
     width: 100%;
