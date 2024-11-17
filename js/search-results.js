@@ -32,12 +32,12 @@ fetch(url)
   .catch(function (error) {
     console.log("Error: " + error);
   });
-let valida = true;
 let formulario = document.querySelector("#formulario-buscador");
 let busqueda = document.querySelector("#buscador");
 let feedback = document.querySelector(".feedback");
 formulario.addEventListener("submit", function (event) {
   event.preventDefault();
+  let valida = true;
   if (busqueda.value == "") {
     feedback.innerHTML = `<p class="error">El campo esta vacío</p>`;
     feedback.style.display = "block";
