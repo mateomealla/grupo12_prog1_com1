@@ -315,7 +315,7 @@ header {
 }
 /* detalle en article <a>*/
 .detalle {
-  background-color: #ff214f;
+  background-color: #817b7c;
   color: white;
   margin: 10px 0px;
   font-size: 20px;
@@ -324,6 +324,17 @@ header {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+}
+.logindetalle{
+  color: white;
+  margin: 10px 0px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  text-decoration: underline;
 }
 /* Pasar mouse, boton detalle ehn index.html se ponga mas oscuro */
 /* .detalle:hover {
@@ -353,12 +364,12 @@ header {
   color: white;
   font-size: 60px;
   font-weight: 700;
-  background-color: #ff214f;
+  background-color: #817b7c;
   width: 27%;
   border-radius: 10px;
 }
 .mas:hover {
-  background-color: #ff0033;
+  background-color: #817b7c;
 }
 /* Footer */
 footer {
@@ -460,7 +471,6 @@ footer {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
-  text-decoration: underline;
   font-variation-settings: "wdth" 100;
 }
 /* divs form */
