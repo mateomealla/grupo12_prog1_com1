@@ -113,60 +113,48 @@ header {
 }
 /* backgrounds*/
 /* Index */
-.bodyhome {
-  background-image: url(../img/fondo.jpg);
+.bodyhome,
+.bodyreceta,
+.bodycategory,
+.bodycategories,
+.bodyresult,
+.bodylogin,
+.bodyregister{ 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+.bodyhome{
+  background-image: url(../img/fondo.jpg);
+}
+
 /* receta */
 .bodyreceta {
   background-image: url(../img/cocinando.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 /* category */
 .bodycategory {
   background-image: url(../img/categora.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+ 
 }
 /* categories */
 .bodycategories {
   background-image: url(../img/categories.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 /* serch-result */
 .bodyresult {
   background-image: url(../img/result.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 /* login */
 .bodylogin {
   background-image: url(../img/login.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+
 }
 /* register */
 .bodyregister {
   background-image: url(../img/register.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 /* BODY*/
 /* div caja transparente */
@@ -198,6 +186,8 @@ header {
   border: white 0.3px solid;
 }
 /* H1 general */
+
+
 .titulo1 {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
@@ -429,39 +419,26 @@ footer {
   filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
 }
 /* cajas rosas de contacto dentro de divs en footer */
+
+.caja-contacto:hover,
+.caja-redes:hover,
+.caja-mapa:hover {
+  background-color: #ff0033;
+}
+/* cajas rosas de redes dentro de divs en footer */
+.caja-redes,
+.caja-mapa,
 .caja-contacto {
   margin: 15px 0px;
   background-color: #ff214da1;
   border-radius: 5px;
   padding: 15px 0px;
+  display: flex; 
+  flex-wrap: wrap; 
 }
-.caja-contacto:hover {
-  background-color: #ff0033;
-}
-/* cajas rosas de redes dentro de divs en footer */
-.caja-redes {
-  margin: 15px 0px;
-  background-color: #ff214da1;
-  border-radius: 5px;
-  padding: 15px 0px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.caja-redes:hover {
-  background-color: #ff0033;
-}
+
 /* caja rosa de mapa dentro de divs en footer */
-.caja-mapa {
-  margin: 15px 0px;
-  background-color: #ff214da1;
-  border-radius: 5px;
-  padding: 15px 0px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.caja-mapa:hover {
-  background-color: #ff0033;
-}
+
 /* Register */
 /* lebels */
 .labels {
@@ -621,14 +598,11 @@ footer {
   .titulo3f {
     text-decoration: underline;
   }
-  .caja-contacto {
-    width: 70%;
-  }
-  .caja-redes {
-    width: 70%;
-  }
+  .caja-contacto,
+  .caja-redes,
   .caja-mapa {
     width: 70%;
+
   }
   .footer-hijos {
     display: flex;
@@ -651,15 +625,13 @@ footer {
   .registro-form {
     width: 100%;
   }
-  .form-r-1 {
+  .form-r-1,
+  .form-r-2,
+  .form-r-3
+   {
     width: 80%;
   }
-  .form-r-2 {
-    width: 80%;
-  }
-  .form-r-3 {
-    width: 80%;
-  }
+  
   .boton-enviar {
     width: 70%;
   }
@@ -739,15 +711,12 @@ footer {
     width: 50%;
     font-size: 30px;
   }
-  .caja-contacto {
-    width: 90%;
-  }
-  .caja-redes {
-    width: 90%;
-  }
+  .caja-contacto,
+  .caja-redes,
   .caja-mapa {
     width: 90%;
   }
+  
   .mapa {
     width: 95%;
   }
