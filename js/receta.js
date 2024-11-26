@@ -1,13 +1,15 @@
 let querysting = location.search;
 let queryStringobj = new URLSearchParams(querysting);
 let idusuario = queryStringobj.get("id");
-url = `https://dummyjson.com/recipes/${idusuario}`;
+let url = `https://dummyjson.com/recipes/${idusuario}`;
 fetch(url)
   .then(function (response) {
     return response.json();
   })
   .then(function (data) {
-    instrucciones = "";
+    let instrucciones = "";
+    let secparatag = "";
+    let sectiontag = document.querySelector("#idtag");
     let titulo = document.querySelector("#titulo1destacado");
     let seccion = document.querySelector(".padre-recetas-detalle");
     for (let i = 0; i < data.instructions.length; i++) {
@@ -24,12 +26,19 @@ fetch(url)
         <img class="imagen-receta" src="${data.image}" alt="Imagen-Receta">
         </article>`;
     }
+    for (let b = 0; b < data.tags.length; b++) {
+      secparatag += `<article class="tags">
+      <a href="./category.html?tag=${data.tags[b]}" class="tagtext">${data.tags[b]}</a>
+      </article>`;
+    }
     console.log(data);
     titulo.innerText += ` ${data.name}`;
+    sectiontag.innerHTML = secparatag;
   })
   .catch(function (error) {
     console.log("Error: " + error);
   });
+
 let formulario = document.querySelector("#formulario-buscador");
 let busqueda = document.querySelector("#buscador");
 let feedback = document.querySelector(".feedback");
