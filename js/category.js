@@ -6,13 +6,11 @@ formulario.addEventListener("submit", function (event) {
   event.preventDefault();
   let valida = true;
   if (busqueda.value == "") {
-    feedback.innerHTML = <p class="error">El campo esta vacío</p>;
+    feedback.innerHTML = `<p class="error">El campo esta vacío</p>`;
     feedback.style.display = "block";
     valida = false;
   } else if (busqueda.value.length < 3) {
-    feedback.innerHTML = (
-      <p class="error">La búsqueda debe tener al menos 3 caracteres</p>
-    );
+    feedback.innerHTML = `<p class="error">La búsqueda debe tener al menos 3 caracteres</p>`;
     feedback.style.display = "block";
     valida = false;
   }
@@ -20,7 +18,7 @@ formulario.addEventListener("submit", function (event) {
     this.submit();
   }
 });
-// ONTENCION DE TAG INDIVIDUAL ATRAVEZ DE QUERYSTRING Y ENDPOINT DE LA API
+// OBTENCION DE TAG INDIVIDUAL ATRAVEZ DE QUERYSTRING Y ENDPOINT DE LA API
 let querysting = location.search;
 let queryStringobj = new URLSearchParams(querysting);
 let tagcategory = queryStringobj.get("tag");
