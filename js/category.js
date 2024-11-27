@@ -1,3 +1,4 @@
+// FORMULARIO BUSCADOR
 let formulario = document.querySelector("#formulario-buscador");
 let busqueda = document.querySelector("#buscador");
 let feedback = document.querySelector(".feedback");
@@ -9,7 +10,9 @@ formulario.addEventListener("submit", function (event) {
     feedback.style.display = "block";
     valida = false;
   } else if (busqueda.value.length < 3) {
-    feedback.innerHTML = <p class="error">La búsqueda debe tener al menos 3 caracteres</p>;
+    feedback.innerHTML = (
+      <p class="error">La búsqueda debe tener al menos 3 caracteres</p>
+    );
     feedback.style.display = "block";
     valida = false;
   }
@@ -17,11 +20,11 @@ formulario.addEventListener("submit", function (event) {
     this.submit();
   }
 });
-
+// ONTENCION DE TAG INDIVIDUAL ATRAVEZ DE QUERYSTRING Y ENDPOINT DE LA API
 let querysting = location.search;
 let queryStringobj = new URLSearchParams(querysting);
 let tagcategory = queryStringobj.get("tag");
-let url = "https://dummyjson.com/recipes/tag/${tagcategory}";
+let url = `https://dummyjson.com/recipes/tag/${tagcategory}`;
 fetch(url)
   .then(function (response) {
     return response.json();

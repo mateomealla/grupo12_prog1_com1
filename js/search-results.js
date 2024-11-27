@@ -1,3 +1,4 @@
+// OBTENCION DE BSUQUEDA ATRAVEZ DE QUERYSTRING Y ENDPOINT DE LA API
 let section = document.querySelector(".padre-recetas");
 let querysting = location.search;
 let queryStringobj = new URLSearchParams(querysting);
@@ -32,6 +33,7 @@ fetch(url)
   .catch(function (error) {
     console.log("Error: " + error);
   });
+// FORMULARIO BUSCADOR
 let formulario = document.querySelector("#formulario-buscador");
 let busqueda = document.querySelector("#buscador");
 let feedback = document.querySelector(".feedback");

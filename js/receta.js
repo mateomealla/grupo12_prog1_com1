@@ -1,3 +1,4 @@
+// OBTENCION DE RECETAS ATRAVEZ DE QUERYSTRING Y ENDPOINT DE LA API
 let querysting = location.search;
 let queryStringobj = new URLSearchParams(querysting);
 let idusuario = queryStringobj.get("id");
@@ -39,6 +40,7 @@ fetch(url)
     console.log("Error: " + error);
   });
 
+// FORMULARIO BUSCADOR
 let formulario = document.querySelector("#formulario-buscador");
 let busqueda = document.querySelector("#buscador");
 let feedback = document.querySelector(".feedback");

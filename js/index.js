@@ -1,3 +1,4 @@
+// OBTENCION DE RECETAS ATRAVEZ DE FETCH (API) Y BOTON CARGAR MAS
 let numero = 10;
 database();
 function database() {
@@ -28,6 +29,8 @@ boton.addEventListener("click", function () {
   numero += 10;
   database();
 });
+
+// FORMULARIO BUSCADOR
 let formulario = document.querySelector("#formulario-buscador");
 let busqueda = document.querySelector("#buscador");
 let feedback = document.querySelector(".feedback");
