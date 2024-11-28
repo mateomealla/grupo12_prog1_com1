@@ -6,13 +6,11 @@ formulario.addEventListener("submit", function (event) {
   event.preventDefault();
   let valida = true;
   if (busqueda.value == "") {
-    feedback.innerHTML = <p class="error">El campo esta vacío</p>;
+    feedback.innerHTML = `<p class="error">El campo esta vacío</p>`;
     feedback.style.display = "block";
     valida = false;
   } else if (busqueda.value.length < 3) {
-    feedback.innerHTML = (
-      <p class="error">La búsqueda debe tener al menos 3 caracteres</p>
-    );
+    feedback.innerHTML =`<p class="error">La búsqueda debe tener al menos 3 caracteres</p>`;
     feedback.style.display = "block";
     valida = false;
   }
@@ -30,12 +28,12 @@ register.addEventListener("submit", function (event) {
   event.preventDefault();
   let validar = true;
   if (mail.value == "") {
-    feedbackr1.innerHTML = <p class="error">Por favor complete el campo</p>;
+    feedbackr1.innerHTML = `<p class="error">Por favor complete el campo</p>`;
     feedbackr1.style.display = "block";
     validar = false;
   }
   if (password.value == "") {
-    feedbackr2.innerHTML = <p class="error">Por favor complete el campo</p>;
+    feedbackr2.innerHTML = `<p class="error">Por favor complete el campo</p>`;
     feedbackr2.style.display = "block";
     validar = false;
   }
