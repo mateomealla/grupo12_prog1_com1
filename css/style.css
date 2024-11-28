@@ -249,12 +249,16 @@ header {
   flex-wrap: wrap;
 }
 .tags {
-  border: white 3px solid;
+  border: #969394 3px solid;
+  background-color: #94979985;
   height: 30px;
   width: 20%;
   text-align: center;
   margin: 9px;
   margin-top: 13px;
+}
+.tags:hover{
+  border: #b3b3b3 3px solid;
 }
 .tagtext {
   color: white;
@@ -332,6 +336,7 @@ header {
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+
 }
 .logindetalle {
   color: white;
@@ -372,12 +377,12 @@ header {
   color: white;
   font-size: 60px;
   font-weight: 700;
-  background-color: #817b7c;
+  background-color: #969394;
   width: 27%;
   border-radius: 10px;
 }
 .mas:hover {
-  background-color: #817b7c;
+  background-color: #b3b3b3;
 }
 /* Footer */
 footer {
@@ -589,6 +594,7 @@ footer {
   }
   #titulo1destacado {
     font-size: 90px;
+    padding: 0px 5px;
   }
   #titulo3destacado {
     font-size: 40px;
@@ -656,6 +662,9 @@ footer {
   .caja-formulario {
     width: 80%;
   }
+  .titulo1{
+    font-size: 100px;
+  }
 }
 /* Celulares */
 @media (max-width: 480px) {
@@ -664,6 +673,9 @@ footer {
   }
   .titulo1 {
     font-size: 60px;
+  }
+  .tags{
+    width: 40%;
   }
   .receta {
     background-color: #343a40;
@@ -674,6 +686,7 @@ footer {
   .receta-detalle {
     width: 100%;
     margin-top: 20px;
+    padding: 20px 5px;
     background-color: #343a40;
   }
   .padre-div-header {
@@ -745,5 +758,8 @@ footer {
   }
   .caja-formulario {
     width: 90%;
+  }
+  .titulo3{
+    font-size: 40px;
   }
 }

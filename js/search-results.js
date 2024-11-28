@@ -14,7 +14,7 @@ fetch(url)
   .then(function (data) {
     if (data.recipes.length == 0) {
       titulob.innerHTML = `No se encontraron recetas con el término: ${buscaformulario}`;
-      caja.innerHTML += `<a class="link-ser" href="./index.html"><h3 href="" class="mas">Voler al Home</h3></a>`;
+      caja.innerHTML += `<a class="link-ser" href="./index.html"><h3 href="" class="mas">Volver al Home</h3></a>`;
       caja.style.display = "block";
       frame.style.display = "none";
     } else {
