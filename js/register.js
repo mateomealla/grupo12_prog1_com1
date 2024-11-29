@@ -32,10 +32,18 @@ register.addEventListener("submit", function (event) {
     feedbackr1.style.display = "block";
     validar = false;
   }
+  else if (mail.value.length >= 1) {
+    feedbackr1.style.display = "none";
+    
+  }
   if (password.value == "") {
     feedbackr2.innerHTML = `<p class="error">Por favor complete el campo</p>`;
     feedbackr2.style.display = "block";
     validar = false;
+  }
+  else if (password.value.length >= 1) {
+    feedbackr2.style.display = "none";
+    
   }
   if (validar) {
     this.submit();

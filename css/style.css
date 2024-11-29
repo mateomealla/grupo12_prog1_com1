@@ -35,6 +35,15 @@
   font-weight: <weight>;
   font-style: normal; */
 
+/* titulos article */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&family=Shadows+Into+Light&display=swap');
+/* .bitter-<uniquifier> {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -231,18 +240,13 @@ header {
 
 /* js */
 /* section del article */
-.padre-recetas {
+.padre-recetas, .padre-recetas-detalle {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 30px 0px;
 }
-/* section de receta html */
-.padre-recetas-detalle {
-  display: flex;
-  justify-content: space-around;
-  padding: 30px 0px;
-}
+
 .padre-tags {
   display: flex;
   justify-content: space-around;
@@ -278,8 +282,9 @@ header {
   align-items: center;
   border: gray 0.3px solid;
   margin-top: 30px;
-  border-radius: 5px;
+  border-radius: 10px;
   text-align: center;
+  filter: drop-shadow(2px 2px 4px rgb(0, 0, 0))
 }
 .receta:hover {
   border: white 2px solid;
@@ -299,20 +304,18 @@ header {
 /* imagen en artcle */
 .imagen-receta {
   width: 100%;
-  filter: drop-shadow(2px 2px 4px rgb(0, 0, 0));
+  border-radius: 10px;
 }
 /* titulo nombre en article */
 .titulo {
   color: white;
   width: 100%;
-  border-radius: 5px;
-  margin: 10px 0px;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
+  margin: 15px 0px;
+  font-size: 25px;
+  font-family: "Bitter", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
 }
 /* p dificultad en article */
 .dificultad {
